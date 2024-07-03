@@ -1,0 +1,63 @@
+/* Global style settings*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ol {
+  list-style-type: none;
+}
+
+/* Colors*/
+.light-grey {
+  color: rgb(172, 171, 177);
+}
+
+.light-grey-bg {
+  background-color: rgb(172, 171, 177);
+}
+
+.dark-grey {
+  color: rgb(53, 53, 53);
+}
+
+.dark-grey-bg {
+  color: rgb(53, 53, 53);
+}
+
+/* Flex */
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  margin-left: auto;
+}
