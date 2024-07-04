@@ -40,6 +40,16 @@ ol {
   color: rgb(53, 53, 53);
 }
 
+/* Margin - Padding*/
+
+.margin {
+  margin: 16px;
+}
+
+.padding {
+  padding: 16px;
+}
+
 /* Flex */
 
 .flex {
@@ -60,4 +70,8 @@ ol {
 
 .right {
   margin-left: auto;
+}
+
+.gap {
+  gap: 16px;
 }
