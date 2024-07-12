@@ -23,6 +23,13 @@ ol {
   list-style-type: none;
 }
 
+/* Sizes*/
+
+.max {
+  height: 100%;
+  width: 100%;
+}
+
 /* Colors*/
 .light-grey {
   color: rgb(172, 171, 177);
@@ -55,11 +62,13 @@ ol {
 .flex {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .flex-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .center {
@@ -73,5 +82,5 @@ ol {
 }
 
 .gap {
-  gap: 16px;
+  gap: 1vw;
 }

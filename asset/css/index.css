@@ -1,4 +1,8 @@
-body {
+.card {
+  height: 300px;
+  width: 200px;
+  border: 1px solid red;
+  flex-shrink: 0;
 }
 
 #header {
@@ -23,6 +27,11 @@ body {
   );
   background-repeat: no-repeat;
   height: 20vh;
+}
+
+#content {
+  box-shadow: 0px -10px 40px white;
+  border: 1px solid red;
 }
 
 #footer {
