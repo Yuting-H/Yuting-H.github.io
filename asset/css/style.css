@@ -23,6 +23,11 @@ ol {
   list-style-type: none;
 }
 
+/* border for debug*/
+.border {
+  border: 1px solid red;
+}
+
 /* Sizes*/
 
 .max {
