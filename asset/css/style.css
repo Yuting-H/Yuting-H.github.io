@@ -23,6 +23,10 @@ ol {
   list-style-type: none;
 }
 
+button {
+  border: none;
+}
+
 /* border for debug*/
 .border {
   border: 1px solid red;
@@ -82,10 +86,14 @@ ol {
   align-items: center;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
 .right {
   margin-left: auto;
 }
 
 .gap {
-  gap: 1vw;
+  gap: 16px;
 }
