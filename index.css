@@ -12,7 +12,17 @@ button {
   width: 200px;
   border: 1px solid red;
   flex-shrink: 0;
+  flex-direction: row;
   border-radius: 16px;
+}
+
+.card a {
+  border: 1px solid black;
+  border-radius: 16px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 8px;
+  width: 100%;
 }
 
 #header {
@@ -25,6 +35,11 @@ button {
 
 #header a {
   font-size: large;
+  color: rgb(53, 53, 53);
+}
+
+#about {
+  margin: 48px;
 }
 
 #hero {
@@ -36,12 +51,11 @@ button {
     rgba(152, 250, 229, 1) 100%
   );
   background-repeat: no-repeat;
-  height: 20vh;
+  height: 5vh;
 }
 
 #content {
   box-shadow: 0px -10px 40px white;
-  border: 1px solid red;
 }
 
 #footer {

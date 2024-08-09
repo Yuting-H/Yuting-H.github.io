@@ -4,27 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome Website</title>
-    <link rel="stylesheet" href="./asset/css/style.css" />
-    <link rel="stylesheet" href="./asset/css/index.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <div id="header">
       <i></i>
       <a href="">HOME</a>
-      <a href="" class="right">ABOUT ME</a>
+      <a href="" class="right">MY LINKS</a>
     </div>
 
-    <div id="hero" class="flex center gap padding">
-      <h1 class="center">TITLE</h1>
-      <p class="center">This websites contains neat things I've coded</p>
+    <div id="about" class="flex padding">
+      <h2 class="">I am:</h2>
+      <div>
+        <ul class="flex gap margin dark-grey">
+          <li>In 3rd year of University</li>
+          <li>Passionate about programming</li>
+          <li>
+            Working through
+            <a href="https://www.theodinproject.com" target="_blank"
+              >The Odin Project</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="hero" class="flex center padding">
+      <h1 class="center"></h1>
+      <h3 class="dark-grey">Neat Things I coded:</h3>
     </div>
 
     <div id="content" class="flex-row center gap padding">
       <div class="card flex center">
-        <a href="" class="max center flex">
-          <img src="" alt="img" class="grow" />
-          <button>Calculator</button>
-        </a>
+        <p>
+          An Etch & Sketch program in the browser I built as a part of my
+          participation in The Odin Project
+        </p>
+        <a href="./etch/index.html" class="down">Etch & Sketch</a>
       </div>
       <div class="card flex center"></div>
       <div class="card flex center"></div>
