@@ -103,3 +103,9 @@ button {
 .gap {
   gap: 16px;
 }
+
+/* Icons */
+
+.bi-linkedin {
+  color: #0077b5;
+}

@@ -7,6 +7,10 @@ button {
   border-top-right-radius: 0;
 }
 
+i {
+  font-size: 32px;
+}
+
 .card {
   height: 300px;
   width: 200px;
@@ -30,7 +34,10 @@ button {
   box-shadow: 0px -5px 10px black;
   display: flex;
   padding: 16px;
+  padding-right: 32px;
+  gap: 16px;
   position: sticky;
+  align-items: center;
 }
 
 #header a {
