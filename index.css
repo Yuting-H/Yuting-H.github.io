@@ -2,7 +2,6 @@ button {
   width: 100%;
   padding: 8px;
   border-radius: 16px;
-
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -47,7 +46,7 @@ a {
 }
 
 #about {
-  margin: 1rem;
+  margin-left: 15vw;
 }
 
 #hero {
@@ -59,7 +58,6 @@ a {
     rgb(255, 255, 255) 100%
   );
   background-repeat: no-repeat;
-  height: 5vh;
 }
 
 #content {
