@@ -4,6 +4,8 @@
   --emrald: rgb(50, 143, 123);
   --dark-navy: #001d3d;
   --clear-blue: #c3cfe0;
+  --light-grey: rgb(172, 171, 177);
+  --dark-grey: rgb(53, 53, 53);
 }
 
 * {
@@ -44,23 +46,6 @@ button {
 
 .bold {
   font-weight: 900;
-}
-
-/* Colors*/
-.light-grey {
-  color: rgb(172, 171, 177);
-}
-
-.light-grey-bg {
-  background-color: rgb(172, 171, 177);
-}
-
-.dark-grey {
-  color: rgb(53, 53, 53);
-}
-
-.dark-grey-bg {
-  color: rgb(53, 53, 53);
 }
 
 /* Margin - Padding*/
