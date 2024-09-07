@@ -46,7 +46,8 @@ header a {
 }
 
 #about {
-  margin-left: 15vw;
+  padding-left: 15vw;
+  background-color: rgb(237, 240, 251);
 }
 
 #hero {
