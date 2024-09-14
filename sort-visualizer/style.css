@@ -1,6 +1,6 @@
 #container {
   border: 1px solid red;
-  height: 500px;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -8,7 +8,8 @@
 
 .bar {
   display: inline;
-  border: 1px solid red;
+  border: 1px solid black;
   background-color: grey;
-  padding: 10px;
+  padding-left: 10px;
+  padding-top: 2px;
 }
