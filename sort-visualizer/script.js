@@ -14,8 +14,8 @@ let width = 10;
 const minHeight = 20;
 
 init(size);
-shuffle(size);
 drawArray();
+shuffle(size);
 /**
  * initialze a ordered array
  */
@@ -35,11 +35,15 @@ function shuffle(size) {
   let temp;
   let j; //the index of the element to switch to
   arr.forEach((element, i) => {
-    j = Math.ceil(Math.random() * size);
-    temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
+    j = Math.floor(Math.random() * size);
+    swap(i, j);
   });
+}
+
+function swap(i, j) {
+  let temp = arr[i];
+  arr[i] = arr[j];
+  arr[j] = temp;
 }
 
 //draws a elem, return reference to element
@@ -55,4 +59,14 @@ function drawArray() {
   arr.forEach((element) => {
     container.appendChild(drawElem(element));
   });
+}
+
+//check if array is sorted in non decreasing order
+function sorted() {
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] > arr[i + 1]) {
+      return false;
+    }
+  }
+  return true;
 }
