@@ -13,9 +13,12 @@ let width = 10;
 //bar must be minimun 20px tall
 const minHeight = 20;
 
+const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay));
+
 init(size);
 drawArray();
-shuffle(size);
+shuffle();
+
 /**
  * initialze a ordered array
  */
@@ -31,19 +34,21 @@ function init(size) {
 /**
  * Shuffles the array
  */
-function shuffle(size) {
+function shuffle() {
   let temp;
   let j; //the index of the element to switch to
-  arr.forEach((element, i) => {
+  for (let i = 0; i < arr.length; i++) {
     j = Math.floor(Math.random() * size);
     swap(i, j);
-  });
+  }
 }
 
-function swap(i, j) {
+async function swap(i, j) {
   let temp = arr[i];
   arr[i] = arr[j];
   arr[j] = temp;
+
+  drawArray();
 }
 
 //draws a elem, return reference to element
@@ -56,6 +61,7 @@ function drawElem(index) {
 
 //draws the array as bars on screen
 function drawArray() {
+  container.innerHTML = "";
   arr.forEach((element) => {
     container.appendChild(drawElem(element));
   });
