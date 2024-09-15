@@ -1,8 +1,6 @@
 let arr = [];
 
-let size = 50;
-
-let container = document.querySelector("#container");
+let size = 100;
 
 //height = multiplier*value
 let heightMultiplier = 10;
@@ -15,9 +13,18 @@ const minHeight = 20;
 
 const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay));
 
+const container = document.querySelector("#container");
+
+const sortBtn = document.querySelector("#sort");
+
+const shuffleBtn = document.querySelector("#shuffle");
+
+sortBtn.addEventListener("click", bubbleSort);
+
+shuffleBtn.addEventListener("click", shuffle);
+
 init(size);
 drawArray();
-shuffle();
 
 /**
  * initialze a ordered array
@@ -34,11 +41,14 @@ function init(size) {
 /**
  * Shuffles the array
  */
-function shuffle() {
+async function shuffle() {
   let temp;
   let j; //the index of the element to switch to
   for (let i = 0; i < arr.length; i++) {
     j = Math.floor(Math.random() * size);
+    container.children.item(i).classList.toggle("red");
+    container.children.item(j).classList.toggle("red");
+    await sleep(10);
     swap(i, j);
   }
 }
@@ -47,8 +57,7 @@ async function swap(i, j) {
   let temp = arr[i];
   arr[i] = arr[j];
   arr[j] = temp;
-
-  drawArray();
+  drawArray(); //updates array after swap
 }
 
 //draws a elem, return reference to element
@@ -75,4 +84,18 @@ function sorted() {
     }
   }
   return true;
+}
+
+async function bubbleSort() {
+  while (!sorted()) {
+    for (let i = 0; i < arr.length - 1; i++) {
+      let j = i + 1;
+      if (arr[i] > arr[j]) {
+        container.children.item(i).classList.toggle("red");
+        container.children.item(j).classList.toggle("red");
+        await sleep(10);
+        swap(i, j);
+      }
+    }
+  }
 }
