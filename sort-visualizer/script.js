@@ -5,8 +5,11 @@ let size = 100;
 //height = multiplier*value
 let heightMultiplier = 10;
 
+//delay between each element swap operation in ms
+let delay = 20;
+
 //width of bars in px
-let width = 10;
+const width = 10;
 
 //bar must be minimun 20px tall
 const minHeight = 20;
@@ -19,9 +22,27 @@ const sortBtn = document.querySelector("#sort");
 
 const shuffleBtn = document.querySelector("#shuffle");
 
+const speedOp = document.querySelector("#speed");
+
 sortBtn.addEventListener("click", bubbleSort);
 
 shuffleBtn.addEventListener("click", shuffle);
+
+speedOp.addEventListener("change", () => {
+  switch (speedOp.value) {
+    case "Fast":
+      delay = 4;
+      break;
+    case "Medium":
+      delay = 20;
+      break;
+    case "Slow":
+      delay = 100;
+      break;
+    default:
+      break;
+  }
+});
 
 init(size);
 drawArray();
@@ -48,7 +69,7 @@ async function shuffle() {
     j = Math.floor(Math.random() * size);
     container.children.item(i).classList.toggle("red");
     container.children.item(j).classList.toggle("red");
-    await sleep(10);
+    await sleep(delay);
     swap(i, j);
   }
 }
@@ -93,7 +114,7 @@ async function bubbleSort() {
       if (arr[i] > arr[j]) {
         container.children.item(i).classList.toggle("red");
         container.children.item(j).classList.toggle("red");
-        await sleep(10);
+        await sleep(delay);
         swap(i, j);
       }
     }

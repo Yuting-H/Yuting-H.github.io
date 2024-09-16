@@ -10,6 +10,10 @@ button {
   align-items: end;
 }
 
+#control {
+  margin: 8px;
+}
+
 .bar {
   display: inline;
   border: 1px solid black;
