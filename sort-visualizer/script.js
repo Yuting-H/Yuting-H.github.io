@@ -22,11 +22,20 @@ const sortBtn = document.querySelector("#sort");
 
 const shuffleBtn = document.querySelector("#shuffle");
 
+const elements = document.querySelector("#elements");
+
 const speedOp = document.querySelector("#speed");
 
 sortBtn.addEventListener("click", bubbleSort);
 
 shuffleBtn.addEventListener("click", shuffle);
+
+elements.addEventListener("change", () => {
+  reset();
+  size = elements.value;
+  init(size);
+  drawArray();
+});
 
 speedOp.addEventListener("change", () => {
   switch (speedOp.value) {
@@ -51,6 +60,7 @@ drawArray();
  * initialze a ordered array
  */
 function init(size) {
+  container.innerHTML = "";
   //calculate new heightMultipler value each time a new array is init
   heightMultiplier = 25 / Math.log(size);
 
@@ -79,6 +89,12 @@ async function swap(i, j) {
   arr[i] = arr[j];
   arr[j] = temp;
   drawArray(); //updates array after swap
+}
+
+function reset() {
+  arr = [];
+  size = 0;
+  container.innerHTML = "";
 }
 
 //draws a elem, return reference to element

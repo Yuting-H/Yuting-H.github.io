@@ -2,19 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <title>Sorting Algorithm Visualizer</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="../global.css" />
-    <script defer src="./script.js"></script>
+    <link
+      rel="stylesheet"
+      href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="../global.css" />
+    <script
+      defer
+      src="./script.js"></script>
   </head>
   <body>
     <div id="container"></div>
-    <div id="control" class="center padding">
+    <div
+      id="control"
+      class="center padding">
       <button id="sort">Sort</button>
       <button id="shuffle">Shuffle</button>
+      <label for="elements"> Elements</label>
+      <input
+        name="elements"
+        id="elements"
+        type="number"
+        min="5"
+        max="100"
+        step="1" />
       <label for="speed">Speed</label>
-      <select name="speed" id="speed">
+      <select
+        name="speed"
+        id="speed">
         <option value="Fast">Fast</option>
         <option value="Medium">Medium</option>
         <option value="Slow">Slow</option>
