@@ -1,6 +1,5 @@
 button {
   padding: 8px;
-  margin: 8px;
 }
 #container {
   border: 1px solid red;
@@ -11,7 +10,8 @@ button {
 }
 
 #control {
-  margin: 8px;
+  display: flex;
+  gap: 8px;
 }
 
 .bar {

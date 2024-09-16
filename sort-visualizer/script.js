@@ -6,7 +6,7 @@ let size = 100;
 let heightMultiplier = 10;
 
 //delay between each element swap operation in ms
-let delay = 20;
+let delay = 4;
 
 //width of bars in px
 const width = 10;
