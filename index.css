@@ -32,7 +32,7 @@ header a {
 
 .card {
   height: 300px;
-  width: 200px;
+  width: max(30%, 200px);
   border: 2px solid var(--dark-navy);
   flex-shrink: 0;
   flex-direction: row;

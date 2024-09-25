@@ -11,6 +11,7 @@ button {
 
 #control {
   display: flex;
+  flex-flow: row wrap;
   gap: 8px;
 }
 
