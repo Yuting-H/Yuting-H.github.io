@@ -10,6 +10,10 @@ i {
   font-size: 32px;
 }
 
+p {
+  width: 90%;
+}
+
 a {
   color: var(--emrald);
 }
@@ -32,17 +36,31 @@ header a {
 
 .card {
   height: 300px;
-  width: max(30%, 200px);
+  width: max(20%, 200px);
   border: 2px solid var(--dark-navy);
   flex-shrink: 0;
   flex-direction: row;
   border-radius: 16px;
 }
 
+.card .title {
+  font-weight: 700;
+  border-bottom: 1px solid grey;
+  padding: 1em;
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.card .description {
+  display: block;
+  flex-grow: 1;
+}
+
 .card a {
   border-top: 1px solid black;
   padding: 8px;
   width: 100%;
+  margin-top: auto;
 }
 
 #about {
