@@ -11,7 +11,7 @@ i {
 }
 
 p {
-  width: 90%;
+  width: 80%;
 }
 
 a {
@@ -41,6 +41,7 @@ header a {
   flex-shrink: 0;
   flex-direction: row;
   border-radius: 16px;
+  padding: 16px;
 }
 
 .card .title {
@@ -52,7 +53,6 @@ header a {
 }
 
 .card .description {
-  display: block;
   flex-grow: 1;
 }
 
