@@ -7,7 +7,7 @@ export default function Home() {
       <section className="flex flex-col gap-4 bg-[rgb(237,240,251)] p-4 pl-[15vw]">
         <h2 className="text-2xl font-bold">I am:</h2>
         <ul className="m-4 flex flex-col gap-4 text-dark-grey">
-          <li>In 3rd year of University</li>
+          <li>In 4th year of University</li>
           <li>Passionate about programming</li>
           <li>
             Working through{" "}
@@ -15,7 +15,8 @@ export default function Home() {
               href="https://www.theodinproject.com"
               target="_blank"
               rel="noreferrer"
-              className="text-brand">
+              className="text-brand"
+            >
               The Odin Project
             </a>
           </li>
@@ -28,10 +29,7 @@ export default function Home() {
 
       <div className="flex flex-wrap items-stretch justify-center gap-4 p-4 shadow-[0_-10px_40px_white]">
         {projects.map((project) => (
-          <ProjectCard
-            key={project.title}
-            {...project}
-          />
+          <ProjectCard key={project.title} {...project} />
         ))}
       </div>
 
