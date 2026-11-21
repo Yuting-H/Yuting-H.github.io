@@ -1,113 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Awesome Website</title>
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./index.css" />
+    <meta
+      name="description"
+      content="Portfolio and coding projects by Yuting Hou." />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg" />
+    <title>Awesome Website</title>
   </head>
   <body>
-    <header>
-      <a href="">HOME</a>
-      <a href="" class="right"></a>
-      <a href="https://github.com/Yuting-H" target="_blank"
-        ><i class="bi bi-github"></i
-      ></a>
-      <a href="https://www.linkedin.com/in/yuting-hou-0x1a/" target="_blank"
-        ><i class="bi bi-linkedin"></i
-      ></a>
-    </header>
-
-    <div id="about" class="flex padding">
-      <h2 class="">I am:</h2>
-      <div>
-        <ul class="flex gap margin dark-grey">
-          <li>In 3rd year of University</li>
-          <li>Passionate about programming</li>
-          <li>
-            Working through
-            <a href="https://www.theodinproject.com" target="_blank"
-              >The Odin Project</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div id="hero" class="flex center padding">
-      <h1 class="center"></h1>
-      <h3 class="dark-grey">Neat Things I coded:</h3>
-    </div>
-
-    <div id="content" class="flex-row center gap padding">
-      <div class="card flex center">
-        <p class="title">My Odin Projects</p>
-        <p class="description">
-          Coding assignments from participating in the Odin Project
-        </p>
-        <a href="https://github.com/Yuting-H/odin-projects" target="_blank"
-          >View on Github</a
-        >
-      </div>
-
-      <div class="card flex center">
-        <p class="title">Etch & sketch</p>
-        <p class="description">
-          An Etch & Sketch program in the browser I built as a part of my
-          participation in The Odin Project
-        </p>
-        <a href="./etch/index.html">Etch & Sketch</a>
-      </div>
-      <div class="card flex center">
-        <p class="title">Calculator</p>
-        <p class="description">Obligatory calculator app</p>
-        <a href="./calculator/index.html" target="_blank">Calculator</a>
-      </div>
-      <div class="card flex center">
-        <p class="title">Sorting Algorithms</p>
-        <p class="description">
-          A demonstration of how sorting algorithms order
-        </p>
-        <a href="./sort-visualizer/sort.html">sort-visualizer</a>
-      </div>
-
-      <div class="card flex center">
-        <p class="title">A Blocky Start</p>
-        <p class="description">
-          An Educational video game that teaches kids programming
-        </p>
-        <a href="https://github.com/Yuting-H/A-Blocky-Start" target="_blank"
-          >View on Github</a
-        >
-      </div>
-      <div class="card flex center">
-        <p class="title">Vocalytics</p>
-        <p class="description">
-          A Webapp that allows user to upload their voice and correct their
-          accent
-        </p>
-        <p>HackTrent '25 project</p>
-        <a href="https://github.com/luka2220/Vocalytics" target="_blank"
-          >View on Github</a
-        >
-      </div>
-      <div class="card flex center">
-        <p class="title">LiteStay</p>
-        <p class="description">
-          A desktop hotel management system written In C++ with the QT framework
-        </p>
-
-        <a href="https://github.com/Yuting-H/LiteStay" target="_blank"
-          >View on Github</a
-        >
-      </div>
-    </div>
-
-    <div id="footer"></div>
+    <div id="root"></div>
+    <script
+      type="module"
+      src="/src/main.jsx"></script>
   </body>
 </html>
